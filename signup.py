@@ -36,7 +36,7 @@ class MainPage(Handler):
         self.render("home.html")
 
     def post(self):
-        username = self.request.get("name")
+        username = self.request.get("username")
         password = self.request.get("password")
         verify = self.request.get("verify")
         email = self.request.get("email")
